@@ -1,0 +1,16 @@
+{
+  "name": "kazu app",
+  "description": "This is kazuapp",
+  "keywords": [],
+  "website": "",
+  "repository": "https://github.com/kazuki-yamashiro/kazu-app",
+  "env": {},
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "buildpacks": [{
+    "url": "heroku/nodejs"
+  }, {
+    "url": "heroku/ruby"
+  }]
+}
