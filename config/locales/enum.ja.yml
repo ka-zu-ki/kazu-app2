@@ -4,3 +4,4 @@ ja:
       male: '男性'
       famale: '女性'
       other: 'その他'
+      unkown: '性別未入力'
