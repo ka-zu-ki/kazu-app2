@@ -4,8 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 gem 'pg', '>=0.18','<2.0'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -20,15 +20,16 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'annotate'
-gem 'better_errors'
 gem 'active_decorator'
+gem 'active_model_serializers'
+gem 'annotate'
+gem 'aws-sdk-s3', require: false
+gem 'better_errors'
 gem 'binding_of_caller'
+gem 'devise'
 gem 'devise'
 gem 'faker'
 gem 'hamlit'
-gem 'devise'
-gem 'aws-sdk-s3', require: false
 
 # Use Active Storage variant
 gem 'image_processing', '~> 1.2'
@@ -39,9 +40,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'dotenv-rails'
   gem 'pry-byebug'
   gem 'rubocop-rails'
-  gem 'dotenv-rails'
 end
 
 group :development do

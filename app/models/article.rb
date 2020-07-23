@@ -21,7 +21,7 @@ class Article < ApplicationRecord
   validates :title, format: { with: /\A(?!\@)/ }
 
   validates :content, presence: true
- 
+
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
   belongs_to :user
@@ -38,5 +38,4 @@ class Article < ApplicationRecord
     likes.count
   end
 
- 
 end
